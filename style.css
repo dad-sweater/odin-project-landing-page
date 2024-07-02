@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
+  font-family: Roboto;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -6,6 +10,7 @@ body {
 .header,
 .footer {
   background-color: #1f2937;
+  display: flex;
 }
 
 .footer,
@@ -14,4 +19,42 @@ body {
   color: #e5e7eb;
 }
 
-.hero-title;
+.hero-title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.signup,
+button {
+  background-color: #3882f6;
+  color: #f9faf8;
+}
+
+.pic-title {
+  font-size: 36px;
+  columns: #1f2937;
+  font-weight: 900;
+}
+
+.quote-box {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.cited-person {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.pic-row .link-and-secondary {
+  color: #1f2937;
+}
