@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  background-color: #1f2937;
+}
+
+.footer,
+.link-and-secondary {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-title;
