@@ -10,7 +10,8 @@ body {
 button {
   font-size: 18px;
   border-radius: 10px;
-  padding: 5px 15px 5px 15px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
 }
 
 .header,
@@ -99,9 +100,11 @@ ul {
 .subheader > img {
   display: flex;
   width: 550px;
-  height: 250px;
+  height: 275px;
   align-items: center;
   object-fit: cover;
+  object-position: 60% bottom;
+  border-radius: 30px;
 }
 
 .hero {
@@ -135,4 +138,10 @@ ul {
     position: absolute;
     transform: skewY(-5deg) rotate(5deg);
   }
+}
+
+.pic-row > img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
 }
