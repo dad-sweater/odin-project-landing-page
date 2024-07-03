@@ -7,6 +7,12 @@ body {
   flex-direction: column;
 }
 
+button {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+}
+
 .header,
 .footer {
   background-color: #1f2937;
@@ -23,10 +29,14 @@ body {
   color: #f9faf8;
   font-size: 48px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .logo {
   font-size: 24px;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
 }
 
 .signup,
@@ -55,6 +65,74 @@ button {
   font-size: 30px;
 }
 
-.pic-row .link-and-secondary {
+.pic-row > .link-and-secondary {
   color: #1f2937;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  flex-direction: column;
+}
+
+.subheader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  align-self: center;
+  gap: 70px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.subheader > img {
+  display: flex;
+  width: 550px;
+  height: 250px;
+  align-items: center;
+  object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.hero > p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.hero > button {
+  border: none;
+  align-self: flex-start;
+}
+
+.redacted {
+  position: relative;
+  white-space: pre;
+  &:after {
+    background: black;
+    border-radius: 0.1em;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+    content: " ";
+    width: 100%;
+    height: 1.2em;
+    left: 0;
+    position: absolute;
+    transform: skewY(-5deg) rotate(5deg);
+  }
 }
