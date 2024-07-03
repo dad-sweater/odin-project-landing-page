@@ -50,6 +50,11 @@ button {
   font-size: 36px;
   columns: #1f2937;
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .quote-box {
@@ -58,6 +63,9 @@ button {
   font-weight: 300;
   font-style: italic;
   color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cited-person {
@@ -66,8 +74,11 @@ button {
   font-size: 30px;
 }
 
-.pic-row > .link-and-secondary {
+.picbox > .link-and-secondary {
   color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 ul {
@@ -88,13 +99,15 @@ ul {
 
 .subheader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 400px;
-  align-self: center;
-  gap: 70px;
+  /* align-self: center; */
   margin-bottom: 50px;
   flex-wrap: wrap;
+  /* gap: 80px; */
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .subheader > img {
@@ -105,6 +118,8 @@ ul {
   object-fit: cover;
   object-position: 60% bottom;
   border-radius: 30px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .hero {
@@ -140,8 +155,49 @@ ul {
   }
 }
 
-.pic-row > img {
-  height: 150px;
-  width: 150px;
+.picbox > img {
+  height: 175px;
+  width: 175px;
   object-fit: cover;
+  border: #3882f6 solid;
+  display: flex;
+  border-radius: 15px;
+}
+
+.pic-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.pic-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+}
+
+.picbox {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+  align-items: center;
+}
+
+.picbox:nth-of-type(1) > img {
+  object-position: 30% bottom;
+}
+
+.picbox:nth-of-type(3) > img {
+  object-position: 60% top;
+}
+
+.quote {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
 }
